@@ -64,6 +64,14 @@
     align-self: self-end;
   }
 
+  .nav__list {
+    text-align: right;
+  }
+
+  .nav__btn[aria-expanded="true"] + .nav__list {
+    padding-top: 1rem;
+  }
+
   .nav__btn[aria-expanded="false"] + .nav__list {
     display: none;
   }
