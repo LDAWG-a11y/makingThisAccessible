@@ -4,11 +4,6 @@ body {
   color: var(--colour-text);
 }
 
-[class^="main__heading"] {
-
-  
-}
-
 .main__heading {
   padding: 2.5rem 0;
   font-size: 4rem;
@@ -37,6 +32,9 @@ h2,
   margin-bottom: .75rem;
   font-size: 2rem;
   font-weight: bold;
+  word-wrap: break-all;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 @media (min-width: 35em) {
