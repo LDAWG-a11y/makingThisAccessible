@@ -5,9 +5,16 @@ body {
 }
 
 [class^="main__heading"] {
+
+  
+}
+
+.main__heading {
   padding: 2.5rem 0;
   font-size: 4rem;
-  
+  word-wrap: break-all;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .main__heading--home {
@@ -15,7 +22,7 @@ body {
   left: 50%;
   display: inline-block;
   padding: 2rem 0;
-  font-size: 3.5rem;
+  font-size: 2.25rem;
   transform: translateX(-50%);
 }
 
@@ -32,14 +39,20 @@ h2,
   font-weight: bold;
 }
 
+@media (min-width: 35em) {
+  .main__heading--home {
+    font-size: 3.5rem;
+  }
+}
+
 @media (min-width: 55em) {
-  .main-heading--home {
+  .main__heading--home {
     font-size: 4.5rem;
   }
 }
 
 @media (min-width: 55em) {
-  .main-heading--home {
+  .main__heading--home {
     padding: 5rem 0;
     font-size: 6rem;
   }

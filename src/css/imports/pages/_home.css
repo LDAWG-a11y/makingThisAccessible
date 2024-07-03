@@ -8,6 +8,8 @@
 .intro__img,
 .intro__img-wrapper {
   border-radius: 50%;
+  max-width: 100%;
+  height: auto;
 }
 
 .intro__img-wrapper {
@@ -15,14 +17,7 @@
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  height: 17rem;
-  width: 17rem;
   background-color: var(--colour-primary);
-}
-
-.intro__img {
-  height: 15rem;
-  width: 15rem;
 }
 
 .intro__link,

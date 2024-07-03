@@ -1,6 +1,8 @@
 .offer__code {
   margin-left: -4px;
   height: 3rem;
+    padding: 2.5rem 0;
+  font-size: 4rem;max-width: 100%;
 }
 
 .ai__list {

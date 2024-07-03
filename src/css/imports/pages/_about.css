@@ -12,6 +12,10 @@
   flex-direction: column;
 }
 
+[data-page="about"] picture img {
+  max-width: 100%;
+}
+
 .profile__main-text  {
   order: 3
 }

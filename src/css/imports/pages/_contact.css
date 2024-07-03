@@ -9,7 +9,7 @@
   flex-direction: column;
   padding: .5rem;
   width: 100%;
-  min-width: 17rem;
+  max-width: 100%;
 }
 
 .form__label {
@@ -22,6 +22,7 @@
   border: 2px solid var(--colour-primary);
   border-radius: 4px;
   padding: .25rem .5rem;
+  max-width: 100%;
 }
 
 .form__input--textarea {
