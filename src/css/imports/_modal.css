@@ -1,0 +1,111 @@
+.modal,
+.modal__inner[role="dialog"],
+.success__dialog {
+  position: fixed;
+  margin: auto;
+  inset: 0.75rem;
+  border: 2px solid var(--colour-primary);
+  border-radius: 8px;
+  padding: .5rem;
+  max-width: 65rem;
+  height: fit-content;
+  background-color: var(--colour-bg);
+  box-shadow: 3px 3px 11px 0px rgba(61,90,128,1);
+}
+
+.modal__footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal__close-btn[id="closeBtm"] {
+  margin: 1rem;
+  border: none;
+  border-radius: 4px;
+  padding: .25rem .75rem;
+  font-weight: bold;
+  color: var(--colour-text);
+  background-color: var(--colour-bright);
+}
+
+.modal__close-btn[id="closeTop"] {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--colour-bright);
+}
+
+.modal__close-btn[id="closeTop"]::before,
+.modal__close-btn[id="closeTop"]::after {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  background-color: var(--colour-text);
+  transform: rotate(45deg);
+}
+
+.modal__close-btn[id="closeTop"]::before {
+  height: calc(100% - .5rem);
+  width: 4px;
+}
+
+.modal__close-btn[id="closeTop"]::after {
+  height: 4px;
+  width: calc(100% - .5rem);
+  
+}
+
+.modal[open]::backdrop {
+  backdrop-filter: blur(20px);
+}
+
+[data-confirm-open] header,
+[data-confirm-open] main,
+[data-confirm-open] footer, 
+html[data-page="about"][data-modal-open] header,
+html[data-page="about"][data-modal-open] main,
+html[data-page="about"][data-modal-open] footer {
+  filter: blur(20px);
+}
+
+.modal__inner[role="dialog"] {
+  position: fixed;
+}
+
+.modal__inner[role="dialog"]:not(.modal--show) {
+  display: none;
+}
+
+.modal--show {
+  display: block;
+}
+
+.success__dialog {
+  padding: 4rem 1rem;
+}
+
+.success__dialog input {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.success__timer {
+  display: block;
+  margin: .5rem 0;
+  height: 8px;
+  width: 100%;
+  background-color: var(--colour-bright);
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: transform 1000ms ease;
+}
+
+.success__timer.closing {
+  transform: scaleX(0);
+}

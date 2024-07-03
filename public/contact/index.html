@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-page="contact" data-test="true">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us | Problematica11y</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <meta name='robots' content='noindex,follow' />
+</head>
+<body>
+ <header class="header">
+  <a class="skip-link visually-hidden" id="skip" href="#h1">Skip to content</a>
+  <nav class="nav">
+    <button class="nav__btn" id="navBtn" aria-expanded="false" aria-controls="menuList"><span class="visually-hidden" id="triggerLabel">Menu</span></button>
+    <ul class="nav__list" id="menuList">
+      
+        
+          <li class="nav__listitem">
+            <a 
+            class="nav__link"
+            id="d1"
+            href="/" >Home</a>
+          </li>
+        
+      
+        
+          <li class="nav__listitem">
+            <a 
+            class="nav__link"
+            id="d2"
+            href="/services/" >Services</a>
+          </li>
+        
+      
+        
+          <li class="nav__listitem">
+            <a 
+            class="nav__link"
+            id="d3"
+            href="/about/" >About</a>
+          </li>
+        
+      
+        
+          <li class="nav__listitem">
+            <a 
+            class="nav__link"
+            id="d4"
+            href="/contact/" aria-current="page">Contact</a>
+          </li>
+        
+      
+        
+          <li class="nav__listitem">
+            <a 
+            class="nav__link"
+            id="d5"
+            href="/testimonials/" >Testimonials</a>
+          </li>
+        
+      
+        
+      
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    
+    <h1 class="main__heading" id="h1">Contact us</h1>
+    
+    <div class="main__container">
+  <h2>Touch base with us</h2>
+  <p>If you have a project that is worthy of our time and skillset, fill in our Contact Form, below and let us know about your future product. Once we have reviewed your request, we'll decide if you need a couple of 10x engineers, like us, or you'd be better off with a conventional developer. You have to understand, that we are in demand, we can only build products for clients when we have complete autonomy over the project lifecycle, the project is big enough for us to make serious bank on, or our involvement finishes off an undesirable to us company. rememeber, we're the best, we know what is best and we need to be trusted to work for you.</p>
+</div>
+<div class="secondary__container" id="form">
+  <div class="form__inputs-wrapper">
+    <span class="form__label" id="fNameLbl">First name</span>
+    <input class="form__input--text input" id="fName" type="text" autocomplete="given-name" aria-labelledby="fNameLbl" required>
+  </div>
+  <div class="form__inputs-wrapper">
+    <label class="form__label">Last name</label>
+    <input class="form__input--text input" id="lName" type="text"  autocomplete="family-name" required>
+  </div>
+  <div class="form__inputs-wrapper">
+    <label class="form__label">Phone</label>
+    <input class="form__input--text input" type="text" id="phone" autocomplete="tel" required>
+  </div>
+  <div class="form__inputs-wrapper">
+    <label class="form__label">Email</label>
+    <input class="form__input--text input" type="email" id="email" autocomplete="email" required>
+  </div>
+  <div class="form__inputs-wrapper">
+    <label class="form__label">Your net worth ($)</label>
+    <input class="form__input--text input" id="worth" type="text" required>
+  </div>
+  <div class="form__inputs-wrapper">
+    <label class="form__label">Your business' name</label>
+    <input class="form__input--text input" type="text" id="org" autocomplete="organization" required>
+  </div>
+  <div class="form__inputs-wrapper">
+    <label class="form__label">Country of residence</label>
+    <input class="form__input--text input" type="text" id="country" autocomplete="country" required>
+  </div>
+  <div class="form__inputs-wrapper">
+  <label class="form__label">Tell us about the project</label>
+    <textarea class="form__input--textarea input" id="query" required></textarea>
+  </div>
+  <div class="form__inputs-wrapper form__accept-container">
+    <span class="form__checkbox" id="cBox" role="checkbox" aria-labelledby="cbLbl" aria-checked="false" aria-required="true" tabindex="0"></span>
+    <span id="cbLbl" class="form__checkbox-label">I agree to anything and everything</span>
+  </div>
+  <div class="form__inputs-wrapper">
+    <button type="submit" class="form__btn" id="formBtn">Submit</submit>
+  </div>
+</div>
+  </main>
+  
+<footer class="footer">
+  <div class="footer__primary">
+    <h2>Disclaimer</h2>
+    <p>This site is designed and built to be intentionallally problematic. It contains numerous accessibility issues that map to WCAG success criteria. It is merely an educational tool, which comes with a supporting guide LINK 
+
+    </p>
+    <p>The copy in this site is just for fun. We use common stereotypical language and views, which some individuals in the tech scene may have. The views in the copy of this site in no way reflect the views of the Make Things Accessible team.</p>
+  </div>
+  <div class="footer__secondary">
+    <h2>Useful information</h2>
+    
+    <div class="footer__popup">
+      <p>Click the orange button, for more help.</p>
+      <p>We have the answer for all of your useful questions</p>
+      <button class="footer__modal-btn" id="modalTrigger">Help</button>
+    </div>
+    <a class="fotter__link" href="/accessibility/">Accessibility</a>
+  </div>
+  <div class="footer__socials">
+    <a href="https://www.facebook.com/"><img src="/img/facey.png" alt="."></a>
+    <a href="https://x.com/home"><img src="/img/x.png" alt="x / Twitter"></a>
+    <a href="https://www.tiktok.com/"><img src="/img/tikTok.png" alt="Tik Tok"></a>
+  </div>
+</footer>
+<dialog class="modal" id="modal">
+  <div class="modal__inner">
+    <button class="modal__close-btn" id="closeTop">
+      <span class="visually-hidden">Close</span>
+      <span class="modal__close--top"></span>
+    </button>
+    <h1 id="mHead">Ask our chatbot anything</h1>
+    <p>You can find all of the help you need in this pop up, simply expand the relevant section to your query. If there isn't 
+      a section that matches your particular query, don't worry about it, your question is simply not worth asking and We have got you covered. trust us, we are the best.
+    </p>
+    <h2 class="accordion__heading" id="accH1" data-expanded="false">
+      <button class="accordion__btn" aria-expanded="false" aria-controls="accP1">Can you make accessible websites?<span class="accordion__icon"></span></button>
+    </h2>
+    <div class="accordion__panel" id="accP2"><p>Yes. In fact we have been building websites that comply with WCAG 1.0 since way back in 1998. We get it, you likely have disabled users 
+      that have issues with your current site and are worried about legal issues. Don't worry, we have your back, we provide solutions that will
+      keep those pesky lawyers at bay, check out our <a href="/services/">Services page</a> for the choice of package</p>
+    </div>
+    <h2 class="accordion__heading" id="accH2" data-expanded="false">
+      <button class="accordion__btn" aria-expanded="false" aria-controls="accP2">Will my website be secure?<span class="accordion__icon"></span></button>
+    </h2>
+    <div class="accordion__panel" id="accP3"><p>Yup. We only use the safest web protocols and encryption methods to keep your site and data safe. All our sites use the HTTP protocol 
+      and the MD5 hashing algorithm.
+    </p></div>
+    <h2 class="accordion__heading" id="accH3" data-expanded="false">
+      <button class="accordion__btn" aria-expanded="false" aria-controls="accP3">Can I use my own designer?<span class="accordion__icon"></span></button>
+    </h2>
+    <div class="accordion__panel" id="accP4">
+      <p>No. Simply put, we are better and you would be making a huge mistake. We are better than the rest 
+        and we know our business better than you. As an example, if your business sells luxury handmade chocolates, we consider you the 
+        expert, so we would not tell you to change the recipe. Using that same logic we don't want some hipster designer telling us 
+        stuff that doesn't make sense. You trust our systems and judgements and we won't tell you how to improve your chocolate (unless we don't like it).</p>
+    </div>
+    <h2 class="accordion__heading" id="accH4" data-expanded="false">
+      <button class="accordion__btn" aria-expanded="false" aria-controls="accP4">Are your systems good value for money?<span class="accordion__icon"></span></button>
+    </h2>
+    <div class="accordion__panel" id="accP5">
+      <p>Hell yeah. We don't feel the need to compete with regular developers, as our stuff is better. You pay a premium price 
+      and get a premium product. Don't settle for less.
+      </p>
+    </div>
+    <h2 class="accordion__heading" id="accH5" data-expanded="false">
+      <button class="accordion__btn" aria-expanded="false" aria-controls="accP5">Will my users find the sites to be intuitive?<span class="accordion__icon"></span></button>
+    </h2>
+    <div class="accordion__panel" id="accP5">
+      <p>Most of them will. Some folks just use stuff wrong, you don't need to worry about those people, 
+        because if they can't figure out how to use our sites, that's usually a good sign they will cause you problems later down the line, y'know
+        "I need to return these shoes as I actually meant to order a microwave". That's far too much hassle, your genuine customers will be fine
+      </p>
+    </div>
+    <h2 class="accordion__heading" id="accH6" data-expanded="false">
+      <button class="accordion__btn" aria-expanded="false" aria-controls="accP6">I have an issue with a site you built<span class="accordion__icon"></span></button>
+    </h2>
+    <div class="accordion__panel" id="accP6"><p>No you don't. You're using it wrong or you broke it (please check the small print in the T&Cs). When it transpires it was your fault, 
+      we can of course fix it for a fee, just send us an email to <a href="mailto:thisIsNotAValidEmailaddress@bradAndChad.com">Support @ Brad and Chad</a></p>
+    </div>
+    <div class="modal__footer">
+      <button class="modal__close-btn" id="closeBtm">
+        close
+      </button>
+    </div>
+  </div>
+</dialog>
+  
+  <script src="/js/site.js"></script>
+</body>
+</html>

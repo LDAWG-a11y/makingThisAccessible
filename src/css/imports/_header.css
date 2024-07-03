@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5rem .25rem;
+  background-color: var(--colour-tertiary);
+}
+
+@media (min-width: 35em) {
+
+  .header {
+    padding: 1rem .75rem
+  }
+}

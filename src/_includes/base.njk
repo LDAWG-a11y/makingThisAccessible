@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-page="{{pageName}}" {% if test %}data-test="true"{% endif %}>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if pageName !== 'testimonials' %}{{ title }} | {{ site.siteName }}{% else %}Testing the range on the new CyberTruck | Brad's personal site{% endif %}</title>
+  <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+  <meta name='robots' content='noindex,follow' />
+</head>
+<body>
+ {% include "_header.njk" %}
+
+  <main>
+    {% if pageName === 'home' %}
+      <h1 class="main__heading--home" id="h1">{{ site.siteName }}</h1>
+    {% else %}
+    <h1 class="main__heading" id="h1">{{ title }}</h1>
+    {% endif %}
+    {{ content | safe }}
+  </main>
+  {% include "_footer.njk" %}
+  
+  <script src="/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+[
+  {"url": "/", "label": "Home"},
+  {"url": "/services/", "label": "Services"},
+  {"url": "/about/", "label": "About"},
+  {"url": "/contact/", "label": "Contact"},
+  {"url": "/testimonials/", "label": "Testimonials"},
+  {"url": "/accessibility/", "label": "Accessibility", "ignorePrimary": true}
+]
