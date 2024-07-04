@@ -9,7 +9,7 @@ test: true
 </div>
 
 <div class="main__container">
-  <p>We're so hip, and we're so good that our customers always leave a 5-star review. We don't do 4-star reviews, hell, if you leave us with a 4 star review, we will point you to the small print in the contract, which explicitly states you must leave a 5-star review and then we will threaten you with our not-so-friendly lawyer. But we know we won't need to do that, because we are the best, not just in the Bay Area, but worldwide - trust us bro!</p>
+  <p>We're so hip, and we're so good that our customers always leave a 5-star review. We don't do 4-star reviews, hell, if you leave us with a 4-star review, we will point you to the small print in the contract, which explicitly states you must leave a 5-star review and then we will threaten you with our not-so-friendly lawyer. But we know we won't need to do that, because we are the best, not just in the Bay Area, but worldwide - trust us bro!</p>
 </div>
 
 <div class="secondary__container">
@@ -27,7 +27,7 @@ test: true
             <svg height="40" width="40"><use href="#star"></use></svg>
           </div>
         </div>
-        <p>Brad and Chad are amazing, they built me the best website ever and I've only had 4 legal challenges, regarding accessibility stuff, in the first month and Brad and Chad have reassured me that it's just people using my site wrong, just like people used to hold the iPhone 4 wrong, I feel so reassured. 10/10, I would highly recommend going with Brad and Chad for your next project.</p>
+        <p>Brad and Chad are amazing, they built me the best website ever and I've only had 4 legal challenges regarding accessibility stuff, in the first month, and Brad and Chad have reassured me that it's just people using my site wrong, just like people used to hold the iPhone 4 wrong, I feel so reassured. 10/10, I would highly recommend going with Brad and Chad for your next project.</p>
         <strong>Maria - San Francisco</strong>
       </div>
       <div class="review__item">
@@ -42,7 +42,7 @@ test: true
             <svg height="40" width="40"><use href="#star"></use></svg>
           </div>
         </div>
-        <p>What can I say? Brad and Chad are the real deal, they guided me through the whole process of of building an online presence, for my new business. Nothing was ever too much trouble, they had the whole site designed, built and on the web in less than 3 hours. Totally amazing.</p>
+        <p>What can I say? Brad and Chad are the real deal, they guided me through the whole process of of building an online presence for my new business. Nothing was ever too much trouble, they had the whole site designed, built and on the web in less than 3 hours. Totally amazing.</p>
         <strong>Malcolm - London</strong>
       </div>
       <div class="review__item">
@@ -57,7 +57,7 @@ test: true
             <svg height="40" width="40"><use href="#star"></use></svg>
           </div>
         </div>
-        <p>I've been developing websites for 15 years and thought I knew everything. I didn't have time to build a personal site so I got in touch with Brad and Chad and it turns out that everything I thought I knew was just wrong. These guys had me questioning everything I thought I knew and built me a great portfolio site, that just works (92% of the time). I will definitely be sending more business their way, thanks guys.</p>
+        <p>I've been developing websites for 15 years and thought I knew everything. I didn't have time to build a new personal site so I got in touch with Brad and Chad and it turns out that everything I thought I knew was just wrong. These guys had me questioning everything I'd ever done and built me a great portfolio site, that just works (92% of the time). I will definitely be sending more business their way, thanks guys.</p>
         <strong>Hikaru - Tokyo</strong>
       </div>
       <div class="review__item">
@@ -72,11 +72,10 @@ test: true
             <svg height="40" width="40"><use href="#star"></use></svg>
           </div>
         </div>
-        <p>Exactly what my business needed, a pair of brothers that know more about tech than anybody else, I simply stunned at their knowledge. They rebranded my business colours as in their expert opinions, my brand colors were "Meh" and "A bit rubbish", I didn't know that and wish I had found Brad and Chad sooner. We also enabled customers to buy products directly from my page, which so far has saved me $0.87 on eBay fees, once I get the traffic Brad and Chad promise will happen, my revenue will be 7 figures, I cannot wait.</p>
+        <p>Exactly what my business needed, a pair of brothers that know more about tech than anybody else, I was simply stunned at their extensive knowledge. They rebranded my business colours as in their expert opinions, my brand colors were "Meh" and "A bit rubbish", I didn't know that and wish I had found Brad and Chad sooner. We also enabled customers to buy products directly from my site, which so far has saved me $0.87 on eBay fees, once I get the traffic Brad and Chad promise will happen, my revenue will be 7 figures, I cannot wait.</p>
         <strong>Lucia - NY</strong>
       </div>
     </div>
   </div>
 </div>
-<p class="result"></p> 
 
