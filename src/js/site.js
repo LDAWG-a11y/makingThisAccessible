@@ -77,6 +77,7 @@ const yuck = () => {
       document.getElementById('form').querySelectorAll('input').forEach(input => {
         input.removeAttribute('autocomplete');
       })
+
       cBox.addEventListener('click', (evt) => {
         if (evt.target.getAttribute('aria-checked') == 'false') {
           evt.target.setAttribute('aria-checked', 'true');
@@ -84,14 +85,42 @@ const yuck = () => {
           evt.target.setAttribute('aria-checked', 'false');
         }
       });
-      formBtn.addEventListener('click', (evt) => {
+
+      fName.addEventListener('focus', () => {
+        if (worth.value.length) {
+          let worthVal = Number(worth.value.replace(/\D/g,''));
+          if (worthVal < 2000000) {
+            inputs.forEach(input => {
+              input.setAttribute('disabled', '')
+            })
+            cBox.setAttribute('aria-disabled', 'true');
+            formBtn.setAttribute('disabled', '');
+            const poorDialog = `<dialog class="poor__dialog" open><h1>OOPS</h1>
+            <p>Sorry, you are not wealthy enough to use our service, Come back when you are not so broke</p>
+            <span class="success__timer"></span>
+            </dialog>;`
+            document.documentElement.setAttribute('data-confirm-open', 'true');
+            document.body.insertAdjacentHTML('beforeend', poorDialog);
+            setTimeout(() => {
+              document.querySelector('.success__timer').classList.add('closing');
+            }, 100);
+
+            setTimeout(() => {
+              document.querySelector('.poor__dialog').remove();
+              document.documentElement.removeAttribute('data-confirm-open');
+            }, 2100);
+          }
+        }
+      })
+
+      formBtn.addEventListener('click', () => {
         badValidation();
       });
     }
 
     if (pageName === 'testimonials') {
       document.querySelector('a[href="/accessibility/"]').addEventListener('keydown', (evt) => {
-        if (evt.key === 'Tab') {
+        if (evt.key === 'Tab' || (evt.shiftKey && evt.key === 'Tab')) {
           evt.preventDefault(); 
         }
       })
@@ -216,11 +245,3 @@ function showReview(reviewNumber) {
 }
 
 setInterval (() => showReview(index), transitionDelay);
-
-const getReviewHeight = () => {
-  reviews.forEach(rev => {
-    console.log( rev.getBoundingClientRect() );
-  })
-}
-
-getReviewHeight();

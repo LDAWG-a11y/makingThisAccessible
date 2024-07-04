@@ -71,3 +71,20 @@
   color: var(--colour-text);
   background-color: var(--colour-bright);
 }
+
+.form__btn:disabled,
+.input:disabled,
+.form__checkbox[aria-disabled] {
+  border-color: grey;
+  background-color: #d1d1d1;
+  color: #949494;
+  pointer-events: none;
+}
+
+label:has(+ [disabled]) {
+  color: #949494;
+}
+
+.form__checkbox[aria-disabled] + .form__checkbox-label {
+  color: #949494;
+}
