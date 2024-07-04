@@ -10,6 +10,10 @@ test: true
   <p>If you have a project that is worthy of our time and skillset, fill in our Contact Form below, and let us know about your tech needs. Once we have reviewed your request, we'll decide if you need a couple of 10x engineers like us, or if you'd be better off with a conventional engineer. You have to understand, that we are in demand, we can only build products for clients when we have complete autonomy over the project lifecycle, the project is big enough for us to make serious bank on, or our involvement finishes off an undesirable company. remember, we're the best, we know what is best for you and we need to be trusted to work for you.</p>
 </div>
 <div class="secondary__container" id="form">
+ <div class="form__inputs-wrapper">
+    <label class="form__label">Your net worth ($)</label>
+    <input class="form__input--text input" id="worth" type="text" required>
+  </div>
   <div class="form__inputs-wrapper">
     <span class="form__label" id="fNameLbl">First name</span>
     <input class="form__input--text input" id="fName" type="text" autocomplete="given-name" aria-labelledby="fNameLbl" required>
@@ -25,10 +29,6 @@ test: true
   <div class="form__inputs-wrapper">
     <label class="form__label">Email</label>
     <input class="form__input--text input" type="email" id="email" autocomplete="email" required>
-  </div>
-  <div class="form__inputs-wrapper">
-    <label class="form__label">Your net worth ($)</label>
-    <input class="form__input--text input" id="worth" type="text" required>
   </div>
   <div class="form__inputs-wrapper">
     <label class="form__label">Your business' name</label>
