@@ -5,9 +5,9 @@ pageName: services
 test: true
 ---
 <div class="main__container">
-<p>We offer the full suite of tech services, we can develop for any device or platform using tried and trusted methodolgies. We invest heavily in the tools we use to create bespoke products, using only the best solutions on the market: React, if your product cannot be created with react, it's probably not worth creating, but we'll still build it, as we're all about the money.</p>
+<p>We offer a complete suite of tech services, we can develop for any device or platform using tried and trusted methodolgies. We invest heavily in the tools we use to create bespoke products. We use the best framework on the market, React, if your product cannot be created with React, it's probably not worth creating, but we'll still build it, as we're all about the cash.</p>
 <p>We offer a selection of packages for all of our products, Bronze, Silver and Gold, we strongly advise the Gold package, as it includes
-a number of automated tools, leveraging the power of advancements in Artificial Intelligence. A suite of intelligent tools to ensure you have a product that protects you from any legal challenges or page-ranking penalties.</p>
+a number of automated tools, leveraging the power of our bespoke advancements in Artificial Intelligence. A suite of intelligent tools to ensure you have a product that protects you from any legal challenges or page-ranking penalties.</p>
 
 <ul class="ai__list">
   <li>Accessibility compliance: Certified Responsible Accessible Program</li>
@@ -17,7 +17,7 @@ a number of automated tools, leveraging the power of advancements in Artificial 
 
 <h2>Special Offer</h2>
 <img class="offer__code" src="/img/offerCode.png" alt="Use code: betterThanTheRest">
-<p>To receive a free, signed (by us) smoothie bottle, with every gold package you purchase</p>
+<p>To receive a free, signed (by us) smoothie bottle, with every gold package you purchase.</p>
 </div>
 
 <div class="secondary__container">
@@ -49,7 +49,7 @@ a number of automated tools, leveraging the power of advancements in Artificial 
       <div class="package__btm">
         <ul class="package__list">
           <li>Everything from Bronze</li>
-          <li>In house accessibility manipulation tool</li>
+          <li>In-house accessibility manipulation tool</li>
           <li>Fast live support (14 days)</li>
           <li>Weekly crypto tips</li>
           <li>Monthly smoothie recipes</li>
@@ -78,5 +78,5 @@ a number of automated tools, leveraging the power of advancements in Artificial 
     </li>
   </ul>
   <h3>Disclaimer</h3>
-  <p class="disclaimer">We work for you, but we do it our way. As we work for you, you are fully responsible for any legal challenges you may face, however, we can recommend a good lawyer. Our products are built to your specification, if you do not specify certain aspects of legal compliance, you enter into contract with us at your risk. We can of course provide an additional consulting service, where we will inform you of all legal risks and how to mitigate them, but, we ain't cheap, we're too good to be cheap.<p>
+  <p class="disclaimer">We work for you, but we do it our way. As we work for you, you are fully responsible for any legal challenges you may face, however, we can recommend a good lawyer should you find yourself in a spont of legal bother. Our products are built to your specification, if you do not specify certain aspects of legal compliance, you enter into contract with us at your risk. We can of course provide an additional consulting service where we will inform you of all legal risks and how to mitigate them, but, we ain't cheap, we're too good to be cheap.<p>
 </div>

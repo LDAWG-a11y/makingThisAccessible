@@ -7,7 +7,7 @@ test: true
 
 <div class="main__container">
   <h2>Touch base with us</h2>
-  <p>If you have a project that is worthy of our time and skillset, fill in our Contact Form, below and let us know about your future product. Once we have reviewed your request, we'll decide if you need a couple of 10x engineers, like us, or you'd be better off with a conventional developer. You have to understand, that we are in demand, we can only build products for clients when we have complete autonomy over the project lifecycle, the project is big enough for us to make serious bank on, or our involvement finishes off an undesirable to us company. rememeber, we're the best, we know what is best and we need to be trusted to work for you.</p>
+  <p>If you have a project that is worthy of our time and skillset, fill in our Contact Form below, and let us know about your tech needs. Once we have reviewed your request, we'll decide if you need a couple of 10x engineers like us, or if you'd be better off with a conventional engineer. You have to understand, that we are in demand, we can only build products for clients when we have complete autonomy over the project lifecycle, the project is big enough for us to make serious bank on, or our involvement finishes off an undesirable company. remember, we're the best, we know what is best for you and we need to be trusted to work for you.</p>
 </div>
 <div class="secondary__container" id="form">
   <div class="form__inputs-wrapper">

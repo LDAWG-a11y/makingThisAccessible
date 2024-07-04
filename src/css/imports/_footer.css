@@ -87,7 +87,7 @@ footer a:not([class]):focus-visible {
   }
 
   .footer__secondary a {
-    margin-top: 3rem;
+    margin-top: 6rem;
   }
 }
 
