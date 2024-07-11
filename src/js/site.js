@@ -108,7 +108,7 @@ const yuck = () => {
             setTimeout(() => {
               document.querySelector('.poor__dialog').remove();
               document.documentElement.removeAttribute('data-confirm-open');
-            }, 2100);
+            }, 2600);
           }
         }
       })
@@ -228,7 +228,7 @@ const badValidation = () => {
     setTimeout(() => {
       document.querySelector('.success__dialog').remove();
       document.documentElement.removeAttribute('data-confirm-open');
-    }, 1100);
+    }, 2600);
   }
 }
 

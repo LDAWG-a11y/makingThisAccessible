@@ -109,15 +109,11 @@ html[data-page="about"][data-modal-open] footer {
   background-color: var(--colour-bright);
   transform-origin: left;
   transform: scaleX(1);
-  transition: transform 1000ms ease;
-}
-
-.poor__dialog {
-
+  transition: transform 2500ms ease;
 }
 
 .poor__dialog .success__timer {
-  transition: transform 2000ms ease;
+  transition: transform 2500ms ease;
 }
 
 .success__timer.closing {
