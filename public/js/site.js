@@ -1,12 +1,15 @@
-const skipLink = document.querySelector('#skip');
+const skipLink = document.getElementById('skip');
 const navBtn = document.getElementById('navBtn');
 const pageName = document.documentElement.getAttribute('data-page');
-const modalBtn = document.getElementById('modalTrigger');
-const modal = document.getElementById('modal');
-let modalInner = modal.firstElementChild;
-const modalCloseBtns = document.querySelectorAll('.modal__close-btn');
+const helpModalBtn = document.getElementById('modalTrigger');
+const helpModal = document.getElementById('modal');
+const successModal = document.querySelector('.success__dialog');
+const poorModal = document.querySelector('.poor__dialog');
+let helpModalInner = helpModal.firstElementChild;
+const helpModalCloseBtns = document.querySelectorAll('.modal__close-btn');
 const accordions = document.querySelectorAll('.accordion__btn');
 let test = document.documentElement.hasAttribute('data-test');
+let review = document.documentElement.hasAttribute('data-review');
 
 const fName = document.getElementById('fName');
 const lName = document.getElementById('lName');
@@ -24,18 +27,14 @@ let index = 0;
 let transitionDelay = 2000;
 const reviewParent = document.querySelector('.review__wrapper');
 const reviews = document.querySelectorAll('.review__item');
-
 showReview(index)
-
 let reviewPos = 1;
 
-
-const yuck = () => {
+const breakIt = () => {
   if (test) {
-
     window.addEventListener('keydown', (evt) => {
       if (evt.key === 'h') {
-        modalBtn.click();
+        helpModalBtn.click();
       }
     })
 
@@ -60,13 +59,13 @@ const yuck = () => {
 
     if (pageName === 'services') {
       document.documentElement.setAttribute('lang', 'es');
-      modalBtn.innerText = 'Just holla us!';
+      helpModalBtn.innerText = 'Just holla us!';
     }
 
     if (pageName === 'about') {
-      modal.replaceWith(modalInner);
-      modalInner.setAttribute('role', 'dialog');
-      modalInner.setAttribute('aria-labelledby', 'mHead');
+      modal.replaceWith(helpModalInner);
+      helpModalInner.setAttribute('role', 'dialog');
+      helpModalInner.setAttribute('aria-labelledby', 'mHead');
       document.getElementById('bradProfile').querySelector('img').alt = 'Chad';
       document.getElementById('chadProfile').querySelector('img').alt = 'Brad';
     }
@@ -95,20 +94,17 @@ const yuck = () => {
             })
             cBox.setAttribute('aria-disabled', 'true');
             formBtn.setAttribute('disabled', '');
-            const poorDialog = `<dialog class="poor__dialog" open><h1>OOPS</h1>
-            <p>Sorry, you are not wealthy enough to use our service, Come back when you are not so broke</p>
-            <span class="success__timer"></span>
-            </dialog>;`
-            document.documentElement.setAttribute('data-confirm-open', 'true');
-            document.body.insertAdjacentHTML('beforeend', poorDialog);
+            document.documentElement.setAttribute('data-form-modal-open', 'true');
+            poorModal.setAttribute('open', '');
             setTimeout(() => {
-              document.querySelector('.success__timer').classList.add('closing');
+              poorModal.querySelector('.success__timer').classList.add('closing');
             }, 100);
 
             setTimeout(() => {
-              document.querySelector('.poor__dialog').remove();
-              document.documentElement.removeAttribute('data-confirm-open');
-            }, 2600);
+              poorModal.removeAttribute('open');
+              poorModal.querySelector('.success__timer').classList.add('closing');
+              document.documentElement.removeAttribute('data-form-modal-open');
+            }, 1600);
           }
         }
       })
@@ -132,26 +128,26 @@ const yuck = () => {
   }
 }
 
-yuck();
+breakIt();
 
 navBtn.addEventListener('click', () => {
   navBtn.getAttribute('aria-expanded') === 'false' ? navBtn.setAttribute('aria-expanded', 'true') : navBtn.setAttribute('aria-expanded', 'false');
 })
 
-modalBtn.addEventListener('click', () => {
+helpModalBtn.addEventListener('click', () => {
   if (!document.documentElement.hasAttribute('data-modal-open')) {
     document.documentElement.setAttribute('data-modal-open', '');
     
     if (test && pageName !== 'about') {
       modal.showModal();
     } else {
-      modalInner.classList.add('modal--show');
+      helpModalInner.classList.add('modal--show');
       document.getElementById('closeTop').focus();
     }
   }
 })
 
-modalCloseBtns.forEach((btn, idx) => {
+helpModalCloseBtns.forEach((btn, idx) => {
   btn.addEventListener('click', (evt) => {
     document.documentElement.removeAttribute('data-modal-open');
     if (test && pageName === 'about') {
@@ -162,18 +158,18 @@ modalCloseBtns.forEach((btn, idx) => {
   })
 
   if (idx === 1 && pageName === 'about' && test) {
-    modalCloseBtns[1].addEventListener('mousedown', () => {
+    helpModalCloseBtns[1].addEventListener('mousedown', () => {
       abtCls();
     })
     
-    modalCloseBtns[1].addEventListener('keydown', () => {
+    helpModalCloseBtns[1].addEventListener('keydown', () => {
       abtCls();
     })
   }
 })
 
 const abtCls = () => {
-  modalInner.classList.remove('modal--show');
+  helpModalInner.classList.remove('modal--show');
   document.body.focus();
   document.documentElement.removeAttribute('data-modal-open');
 }
@@ -206,35 +202,27 @@ const badValidation = () => {
   }
 
   if (document.querySelectorAll('[data-err').length < 1) {
-    const success = `<dialog open class="success__dialog">
-    <h1>We gotchu, hold tight, we'll be in touch!</h1>
-    <p>I confirm by sending this message I will be billed a compulsory consultation fee of $2000, for receiving a follow up call</p>
-    <p>It is my responsibility to answer the call, any missed calls will be billed at $1000 per time</p>
-    <input id="cBoxSuccess" type="checkbox" checked>
-    <label for="cBoxSuccess">I agree to be billed at the supplied rate</label>
-    <span class="success__timer"></span>
-    </dialog>`;
-    document.documentElement.setAttribute('data-confirm-open', 'true');
-
-    document.body.insertAdjacentHTML('beforeend', success);
+    document.documentElement.setAttribute('data-form-modal-open', 'true');
+    successModal.setAttribute('open', '');
     document.getElementById('cBoxSuccess').addEventListener('click', (evt) => {
       evt.preventDefault();
     });
     setTimeout(() => {
-      document.querySelector('.success__timer').classList.add('closing');
+      successModal.querySelector('.success__timer').classList.add('closing');
     }, 100);
     
 
     setTimeout(() => {
       document.querySelector('.success__dialog').remove();
-      document.documentElement.removeAttribute('data-confirm-open');
-    }, 2600);
+      document.documentElement.removeAttribute('data-form-modal-open');
+      successModal.querySelector('.success__timer').classList.remove('closing');
+    }, 1600);
   }
 }
 
 function showReview(reviewNumber) {
- reviews.forEach((review, i) => {
-  i === reviewNumber ? review.setAttribute('aria-hidden', 'false') : review.setAttribute('aria-hidden', 'true');
+ reviews.forEach((review, idx) => {
+  idx === reviewNumber ? review.setAttribute('aria-hidden', 'false') : review.setAttribute('aria-hidden', 'true');
 })
 
  index++
@@ -245,3 +233,9 @@ function showReview(reviewNumber) {
 }
 
 setInterval (() => showReview(index), transitionDelay);
+
+const fixIt = () => {
+  if (review) {
+
+  }
+}
