@@ -1,4 +1,4 @@
-[data-confirm-open="true"] {
+[data-form-modal-open] {
   overflow-y: hidden;
 }
 
@@ -70,9 +70,10 @@
   backdrop-filter: blur(20px);
 }
 
-[data-confirm-open] header,
-[data-confirm-open] main,
-[data-confirm-open] footer, 
+
+[data-form-modal-open] header,
+[data-form-modal-open] main,
+[data-form-modal-open] footer, 
 html[data-page="about"][data-modal-open] header,
 html[data-page="about"][data-modal-open] main,
 html[data-page="about"][data-modal-open] footer {
@@ -109,11 +110,7 @@ html[data-page="about"][data-modal-open] footer {
   background-color: var(--colour-bright);
   transform-origin: left;
   transform: scaleX(1);
-  transition: transform 2500ms ease;
-}
-
-.poor__dialog .success__timer {
-  transition: transform 2500ms ease;
+  transition: transform 1500ms ease;
 }
 
 .success__timer.closing {
