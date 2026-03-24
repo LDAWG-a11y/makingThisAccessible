@@ -2,6 +2,7 @@ body {
   font-size: 1.25rem;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--colour-text);
+  overflow-x: hidden;
 }
 
 .main__heading {

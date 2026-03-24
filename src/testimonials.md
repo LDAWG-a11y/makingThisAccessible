@@ -4,8 +4,8 @@ title: Testimonials
 pageName: testimonials
 test: true
 ---
-<div style="display: none;">
-  <svg id="star" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40" height="40" viewBox="0 0 47.94 47.94"><path fill="#ed8a19" d="m26.285 2.486 5.407 10.956a2.58 2.58 0 0 0 1.944 1.412l12.091 1.757c2.118.308 2.963 2.91 1.431 4.403l-8.749 8.528a2.582 2.582 0 0 0-.742 2.285l2.065 12.042c.362 2.109-1.852 3.717-3.746 2.722l-10.814-5.685a2.585 2.585 0 0 0-2.403 0l-10.814 5.685c-1.894.996-4.108-.613-3.746-2.722l2.065-12.042a2.582 2.582 0 0 0-.742-2.285L.783 21.014c-1.532-1.494-.687-4.096 1.431-4.403l12.091-1.757a2.58 2.58 0 0 0 1.944-1.412l5.407-10.956c.946-1.919 3.682-1.919 4.629 0z"/></svg>    
+<div class="use__star" style="display: none;">
+  <svg id="star" class="review__star" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40" height="40" viewBox="0 0 47.94 47.94"><path fill="#ed8a19" d="m26.285 2.486 5.407 10.956a2.58 2.58 0 0 0 1.944 1.412l12.091 1.757c2.118.308 2.963 2.91 1.431 4.403l-8.749 8.528a2.582 2.582 0 0 0-.742 2.285l2.065 12.042c.362 2.109-1.852 3.717-3.746 2.722l-10.814-5.685a2.585 2.585 0 0 0-2.403 0l-10.814 5.685c-1.894.996-4.108-.613-3.746-2.722l2.065-12.042a2.582 2.582 0 0 0-.742-2.285L.783 21.014c-1.532-1.494-.687-4.096 1.431-4.403l12.091-1.757a2.58 2.58 0 0 0 1.944-1.412l5.407-10.956c.946-1.919 3.682-1.919 4.629 0z"/></svg>    
 </div>
 
 <div class="main__container">
@@ -17,9 +17,10 @@ test: true
     <div class="review__wrapper" aria-live="assertive" aria-relevant="all">
       <div class="review__item">
         <div class="review__top">
+        <h2 class="visually-hidden" id="revHeading1">Maria - San Francisco, 5 stars</h2>
           <img class="review__img" src="/img/maria.png" alt="">
-          <div class="review__stars" role="img" aria-labelledby="starCount">
-            <p class="visually-hidden" id="starCount">5 stars</p>
+          <div class="review__stars" role="img" aria-labelledby="starCount1">
+            <p class="visually-hidden" id="starCount1">5 stars</p>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
@@ -27,14 +28,15 @@ test: true
             <svg height="40" width="40"><use href="#star"></use></svg>
           </div>
         </div>
-        <p>Brad and Chad are amazing, they built me the best website ever and I've only had 4 legal challenges regarding accessibility stuff, in the first month, and Brad and Chad have reassured me that it's just people using my site wrong, just like people used to hold the iPhone 4 wrong, I feel so reassured. 10/10, I would highly recommend going with Brad and Chad for your next project.</p>
+        <p>Brad and Chad are amazing, they built me the best website ever and I've only had 4 legal challenges regarding accessibility stuff, in the first month, this is down from 5, last month. Brad and Chad have reassured me that it's just people using my site wrong, just like people used to hold the iPhone 4 wrong, I feel so reassured. 10/10, I would highly recommend going with Brad and Chad for your next project.</p>
         <strong>Maria - San Francisco</strong>
       </div>
       <div class="review__item">
         <div class="review__top">
+          <h2 class="visually-hidden" id="revHeading2">Malcolm - London, 5 stars</h2>
           <img class="review__img" src="/img/malcolm.png" alt="">
-          <div class="review__stars" role="img" aria-labelledby="starCount">
-            <p class="visually-hidden" id="starCount">5 stars</p>
+          <div class="review__stars" role="img" aria-labelledby="starCount2">
+            <p class="visually-hidden" id="starCount2">5 stars</p>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
@@ -46,10 +48,11 @@ test: true
         <strong>Malcolm - London</strong>
       </div>
       <div class="review__item">
+      <h2 class="visually-hidden" id="revHeading3">Hikaru - Tokyo, 5 stars</h2>
         <div class="review__top">
           <img class="review__img" src="/img/hikaru.png" alt="">
-          <div class="review__stars" role="img" aria-labelledby="starCount">
-            <p class="visually-hidden" id="starCount">5 stars</p>
+          <div class="review__stars" role="img" aria-labelledby="starCount3">
+            <p class="visually-hidden" id="starCount3">5 stars</p>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
@@ -62,9 +65,10 @@ test: true
       </div>
       <div class="review__item">
         <div class="review__top">
+        <h2 class="visually-hidden" id="revHeading4">Lucia - NY, 5 stars</h2>
           <img class="review__img" src="/img/lucia.png" alt="">
-          <div class="review__stars" role="img" aria-labelledby="starCount">
-            <p class="visually-hidden" id="starCount">5 stars</p>
+          <div class="review__stars" role="img" aria-labelledby="starCount4">
+            <p class="visually-hidden" id="starCount4">5 stars</p>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>

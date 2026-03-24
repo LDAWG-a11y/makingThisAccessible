@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-page="about" data-test="true">
+<html lang="en" data-page="about">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
  <header class="header">
   <a class="skip-link visually-hidden" id="skip" href="#h1">Skip to content</a>
   <nav class="nav">
-    <button class="nav__btn" id="navBtn" aria-expanded="false" aria-controls="menuList"><span class="visually-hidden" id="triggerLabel">Menu</span></button>
+    <button class="nav__btn" id="navBtn" aria-expanded="false" aria-controls="menuList"><span class="visually-hidden" id="triggerLabel">Site navigation</span></button>
     <ul class="nav__list" id="menuList">
       
         
@@ -80,7 +80,7 @@
   <div class="profile" id="bradProfile">
     <div class="profile__primary">
       <h3 class="profile__main-heading">Brad</h3>
-      <picture><source type="image/webp" srcset="/img/chad-275w.webp 275w" sizes="(max-width: 28rem)"><img alt="Brad" loading="lazy" decoding="async" src="/img/chad-275w.png" width="275" height="275"></picture>
+      <picture><source type="image/webp" srcset="/img/chad-275w.webp 275w" sizes="(max-width: 28rem)"><img alt="Chad" loading="lazy" decoding="async" src="/img/chad-275w.png" width="275" height="275"></picture>
       <div class="profile__main-text">
         <h4 class="profile__sub-heading">Role</h4>
         <p>Chief Technology Officer</p>
@@ -111,7 +111,7 @@
   <div class="profile" id="chadProfile">
     <div class="profile__primary">
       <h3 class="profile__main-heading">Chad</h3>
-      <picture><source type="image/webp" srcset="/img/brad-272w.webp 272w" sizes="(max-width: 28rem)"><img alt="Chad" loading="lazy" decoding="async" src="/img/brad-272w.png" width="272" height="271"></picture>
+      <picture><source type="image/webp" srcset="/img/brad-272w.webp 272w" sizes="(max-width: 28rem)"><img alt="Brad" loading="lazy" decoding="async" src="/img/brad-272w.png" width="272" height="271"></picture>
       <div class="profile__main-text">
         <h4 class="profile__sub-heading">Role</h4>
         <p>Chief Operating Officer</p>
@@ -154,25 +154,27 @@
     <p>All images are generated with Adobe Firefly AI.</p>
   </div>
   <div class="footer__secondary">
-    <h2>Useful information</h2>
-    
+    <div class="footer__useful">
+      <h2>Useful Stuff</h2>
+      <div></div>
+    </div>    
     <div class="footer__popup">
-      <p>Click the orange button, for more help.</p>
+      <p>Click the <span>blue button</span>, for Assistance.</p>
       <p>We have the answer for all of your useful questions</p>
       <button class="footer__modal-btn" id="modalTrigger">Help</button>
     </div>
-    <a class="fotter__link" href="/accessibility/">Accessibility</a>
+    <a class="footer__link" href="/accessibility/">Accessibility</a>
   </div>
   <div class="footer__socials">
-    <a href="https://www.facebook.com/"><img src="/img/facey.png" alt="."></a>
-    <a href="https://x.com/home"><img src="/img/x.png" alt="x / Twitter"></a>
-    <a href="https://www.tiktok.com/"><img src="/img/tikTok.png" alt="Tik Tok"></a>
+    <a href="https://www.facebook.com/"><img src="/img/facey.png" class="footer__socials--facebook" alt="."></a>
+    <a href="https://x.com/home"><img src="/img/x.png" alt="x / Twitter" class="footer__socials--twitter"></a>
+    <a href="https://www.tiktok.com/"><img src="/img/tikTok.png" alt="Tik Tok" class="footer__socials--tiktok"></a>
   </div>
 </footer>
 <dialog class="modal" id="modal">
   <div class="modal__inner">
     <button class="modal__close-btn" id="closeTop">
-      <span class="visually-hidden">Close</span>
+      <span class="visually-hidden"></span>
       <span class="modal__close--top"></span>
     </button>
     <h1 id="mHead">Ask our chatbot anything</h1>
@@ -244,6 +246,22 @@
   <p>Sorry, you are not wealthy enough to use our service, Come back when you're not so broke</p>
   <span class="success__timer"></span>
 </dialog>
+<section class="toggle__wrapper" aria-labelledby="toggleHeading">
+  <h2 id="toggleHeading" style="display:none">Fix site controls</h2>
+  
+<label for="toggleSwitch" class="toggle__label">
+    Fix issues
+    <button id="toggleSwitch" class="toggle__btn" aria-pressed="false">
+      <span class="toggle__thumb"></span>
+      <svg class="toggle__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+        <path d="m18.148 12.48 5.665-5.66a4 4 0 0 0 0-5.66 3.996 3.996 0 0 0-5.665 0l-5.664 5.66L6.82 1.16a3.994 3.994 0 0 0-5.664 0 4 4 0 0 0 0 5.66l5.664 5.66-5.664 5.67a4 4 0 0 0 0 5.66 3.994 3.994 0 0 0 5.664 0l5.664-5.66 5.664 5.66a3.996 3.996 0 0 0 5.665 0 4 4 0 0 0 0-5.66z"/>
+      </svg>
+      <svg class="toggle__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 -1 10 10">
+        <path d="M3.06 2.94A1.5 1.5 0 0 0 .94 5.06l2 2a1.5 1.5 0 0 0 2.12 0l4-4A1.5 1.5 0 0 0 6.94.94L4 3.878z" clip-rule="evenodd"/>
+      </svg>
+    </button>
+  </label>
+</section>
   
   <script src="/js/site.js"></script>
 </body>

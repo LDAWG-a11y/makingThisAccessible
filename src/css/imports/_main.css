@@ -27,11 +27,17 @@ footer {
   max-width: 75rem;
 }
 
-button:focus-visible,
-[role="checkbox"]:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
+button:focus,
+[role="checkbox"]:focus,
+input:focus,
+textarea:focus {
   outline: 2px solid var(--colour-bright);
+}
+
+[role="checkbox"][data-err]:focus,
+input[data-err]:focus,
+textarea[data-err]:focus {
+  outline: 2px solid var(--colour--error);
 }
 
 main {
