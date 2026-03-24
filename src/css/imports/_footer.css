@@ -94,14 +94,15 @@ footer a:not([class]):focus-visible {
 @media (min-width: 55em) {
   .footer {
     padding: 1.25rem;
+    flex-wrap: wrap;
   }
 
   .footer__primary {
-    flex: 0 0 65%;
+    /* flex: 0 0 65%; */
   }
 
   .footer__secondary {
-    flex: 35%;
+    /* flex: 35%; */
   }
 
   .footer__primary p {

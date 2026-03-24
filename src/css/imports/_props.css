@@ -3,8 +3,14 @@
   --colour-secondary: #98c1d9;
   --colour-tertiary: #e0fbfc;
   --colour-quarternary: #e0fbfc;
-  --colour-bright: #ee6c4d;
+  --colour-bright: #EE6C4D;
   --colour-text: #1a1a1a;
   --colour-bg: #fafafa;
+  --colour--error: #cd0000;
   --shadow: 1px 1px 10px -1px rgba(0,0,0,0.55);
+  /* Toggle */
+  --toggle-off: hsl(0, 100%, 85%);
+  --toggle-on: hsl(120, 35%, 80%);
+  --colour-bg--light: hsl(240, 100%, 98%);
+  --colour-mta: #72278e;
 }

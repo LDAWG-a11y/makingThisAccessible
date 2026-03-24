@@ -10,19 +10,25 @@
     <p>All images are generated with Adobe Firefly AI.</p>
   </div>
   <div class="footer__secondary">
-    <h2>Useful information</h2>
-    
+    <div class="footer__useful">
+      <h2>Useful Stuff</h2>
+      <div></div>
+    </div>    
     <div class="footer__popup">
-      <p>Click the orange button, for more help.</p>
+      <p>Click the <span>blue button</span>, for Assistance.</p>
       <p>We have the answer for all of your useful questions</p>
-      <button class="footer__modal-btn" id="modalTrigger">Help</button>
+      <button class="footer__modal-btn" id="modalTrigger">{{'Just holla at us!' if pageName === 'services' else 'Help'}}</button>
     </div>
-    <a class="fotter__link" href="/accessibility/">Accessibility</a>
+    <a class="footer__link" href="/accessibility/">Accessibility</a>
   </div>
   <div class="footer__socials">
-    <a href="https://www.facebook.com/"><img src="/img/facey.png" alt="."></a>
-    <a href="https://x.com/home"><img src="/img/x.png" alt="x / Twitter"></a>
-    <a href="https://www.tiktok.com/"><img src="/img/tikTok.png" alt="Tik Tok"></a>
+    <a href="https://www.facebook.com/"><img src="/img/facey.png" class="footer__socials--facebook" alt="."></a>
+    <a href="https://x.com/home"><img src="/img/x.png" alt="x / Twitter" class="footer__socials--twitter"></a>
+    <a href="https://www.tiktok.com/"><img src="/img/tikTok.png" alt="Tik Tok" class="footer__socials--tiktok"></a>
   </div>
 </footer>
 {% include '_modals.njk' %}
+<section class="toggle__wrapper" aria-labelledby="toggleHeading">
+  <h2 id="toggleHeading" style="display:none">Fix site controls</h2>
+  {% include '_toggle.njk' %}
+</section>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-page="testimonials" data-test="true">
+<html lang="en" data-page="testimonials">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
  <header class="header">
   <a class="skip-link visually-hidden" id="skip" href="#h1">Skip to content</a>
   <nav class="nav">
-    <button class="nav__btn" id="navBtn" aria-expanded="false" aria-controls="menuList"><span class="visually-hidden" id="triggerLabel">Menu</span></button>
+    <button class="nav__btn" id="navBtn" aria-expanded="false" aria-controls="menuList"><span class="visually-hidden" id="triggerLabel">Site navigation</span></button>
     <ul class="nav__list" id="menuList">
       
         
@@ -69,8 +69,8 @@
     
     <h1 class="main__heading" id="h1">Testimonials</h1>
     
-    <div style="display: none;">
-  <svg id="star" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40" height="40" viewBox="0 0 47.94 47.94"><path fill="#ed8a19" d="m26.285 2.486 5.407 10.956a2.58 2.58 0 0 0 1.944 1.412l12.091 1.757c2.118.308 2.963 2.91 1.431 4.403l-8.749 8.528a2.582 2.582 0 0 0-.742 2.285l2.065 12.042c.362 2.109-1.852 3.717-3.746 2.722l-10.814-5.685a2.585 2.585 0 0 0-2.403 0l-10.814 5.685c-1.894.996-4.108-.613-3.746-2.722l2.065-12.042a2.582 2.582 0 0 0-.742-2.285L.783 21.014c-1.532-1.494-.687-4.096 1.431-4.403l12.091-1.757a2.58 2.58 0 0 0 1.944-1.412l5.407-10.956c.946-1.919 3.682-1.919 4.629 0z"/></svg>    
+    <div class="use__star" style="display: none;">
+  <svg id="star" class="review__star" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40" height="40" viewBox="0 0 47.94 47.94"><path fill="#ed8a19" d="m26.285 2.486 5.407 10.956a2.58 2.58 0 0 0 1.944 1.412l12.091 1.757c2.118.308 2.963 2.91 1.431 4.403l-8.749 8.528a2.582 2.582 0 0 0-.742 2.285l2.065 12.042c.362 2.109-1.852 3.717-3.746 2.722l-10.814-5.685a2.585 2.585 0 0 0-2.403 0l-10.814 5.685c-1.894.996-4.108-.613-3.746-2.722l2.065-12.042a2.582 2.582 0 0 0-.742-2.285L.783 21.014c-1.532-1.494-.687-4.096 1.431-4.403l12.091-1.757a2.58 2.58 0 0 0 1.944-1.412l5.407-10.956c.946-1.919 3.682-1.919 4.629 0z"/></svg>    
 </div>
 <div class="main__container">
   <p>We're so hip, and we're so good that our customers always leave a 5-star review. We don't do 4-star reviews, hell, if you leave us with a 4-star review, we will point you to the small print in the contract, which explicitly states you must leave a 5-star review and then we will threaten you with our not-so-friendly lawyer. But we know we won't need to do that, because we are the best, not just in the Bay Area, but worldwide - trust us bro!</p>
@@ -80,9 +80,10 @@
     <div class="review__wrapper" aria-live="assertive" aria-relevant="all">
       <div class="review__item">
         <div class="review__top">
+        <h2 class="visually-hidden" id="revHeading1">Maria - San Francisco, 5 stars</h2>
           <img class="review__img" src="/img/maria.png" alt="">
-          <div class="review__stars" role="img" aria-labelledby="starCount">
-            <p class="visually-hidden" id="starCount">5 stars</p>
+          <div class="review__stars" role="img" aria-labelledby="starCount1">
+            <p class="visually-hidden" id="starCount1">5 stars</p>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
@@ -90,14 +91,15 @@
             <svg height="40" width="40"><use href="#star"></use></svg>
           </div>
         </div>
-        <p>Brad and Chad are amazing, they built me the best website ever and I've only had 4 legal challenges regarding accessibility stuff, in the first month, and Brad and Chad have reassured me that it's just people using my site wrong, just like people used to hold the iPhone 4 wrong, I feel so reassured. 10/10, I would highly recommend going with Brad and Chad for your next project.</p>
+        <p>Brad and Chad are amazing, they built me the best website ever and I've only had 4 legal challenges regarding accessibility stuff, in the first month, this is down from 5, last month. Brad and Chad have reassured me that it's just people using my site wrong, just like people used to hold the iPhone 4 wrong, I feel so reassured. 10/10, I would highly recommend going with Brad and Chad for your next project.</p>
         <strong>Maria - San Francisco</strong>
       </div>
       <div class="review__item">
         <div class="review__top">
+          <h2 class="visually-hidden" id="revHeading2">Malcolm - London, 5 stars</h2>
           <img class="review__img" src="/img/malcolm.png" alt="">
-          <div class="review__stars" role="img" aria-labelledby="starCount">
-            <p class="visually-hidden" id="starCount">5 stars</p>
+          <div class="review__stars" role="img" aria-labelledby="starCount2">
+            <p class="visually-hidden" id="starCount2">5 stars</p>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
@@ -109,10 +111,11 @@
         <strong>Malcolm - London</strong>
       </div>
       <div class="review__item">
+      <h2 class="visually-hidden" id="revHeading3">Hikaru - Tokyo, 5 stars</h2>
         <div class="review__top">
           <img class="review__img" src="/img/hikaru.png" alt="">
-          <div class="review__stars" role="img" aria-labelledby="starCount">
-            <p class="visually-hidden" id="starCount">5 stars</p>
+          <div class="review__stars" role="img" aria-labelledby="starCount3">
+            <p class="visually-hidden" id="starCount3">5 stars</p>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
@@ -125,9 +128,10 @@
       </div>
       <div class="review__item">
         <div class="review__top">
+        <h2 class="visually-hidden" id="revHeading4">Lucia - NY, 5 stars</h2>
           <img class="review__img" src="/img/lucia.png" alt="">
-          <div class="review__stars" role="img" aria-labelledby="starCount">
-            <p class="visually-hidden" id="starCount">5 stars</p>
+          <div class="review__stars" role="img" aria-labelledby="starCount4">
+            <p class="visually-hidden" id="starCount4">5 stars</p>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
             <svg height="40" width="40"><use href="#star"></use></svg>
@@ -155,25 +159,27 @@
     <p>All images are generated with Adobe Firefly AI.</p>
   </div>
   <div class="footer__secondary">
-    <h2>Useful information</h2>
-    
+    <div class="footer__useful">
+      <h2>Useful Stuff</h2>
+      <div></div>
+    </div>    
     <div class="footer__popup">
-      <p>Click the orange button, for more help.</p>
+      <p>Click the <span>blue button</span>, for Assistance.</p>
       <p>We have the answer for all of your useful questions</p>
       <button class="footer__modal-btn" id="modalTrigger">Help</button>
     </div>
-    <a class="fotter__link" href="/accessibility/">Accessibility</a>
+    <a class="footer__link" href="/accessibility/">Accessibility</a>
   </div>
   <div class="footer__socials">
-    <a href="https://www.facebook.com/"><img src="/img/facey.png" alt="."></a>
-    <a href="https://x.com/home"><img src="/img/x.png" alt="x / Twitter"></a>
-    <a href="https://www.tiktok.com/"><img src="/img/tikTok.png" alt="Tik Tok"></a>
+    <a href="https://www.facebook.com/"><img src="/img/facey.png" class="footer__socials--facebook" alt="."></a>
+    <a href="https://x.com/home"><img src="/img/x.png" alt="x / Twitter" class="footer__socials--twitter"></a>
+    <a href="https://www.tiktok.com/"><img src="/img/tikTok.png" alt="Tik Tok" class="footer__socials--tiktok"></a>
   </div>
 </footer>
 <dialog class="modal" id="modal">
   <div class="modal__inner">
     <button class="modal__close-btn" id="closeTop">
-      <span class="visually-hidden">Close</span>
+      <span class="visually-hidden"></span>
       <span class="modal__close--top"></span>
     </button>
     <h1 id="mHead">Ask our chatbot anything</h1>
@@ -245,6 +251,24 @@
   <p>Sorry, you are not wealthy enough to use our service, Come back when you're not so broke</p>
   <span class="success__timer"></span>
 </dialog>
+<section class="toggle__wrapper" aria-labelledby="toggleHeading">
+  <h2 id="toggleHeading" style="display:none">Fix site controls</h2>
+  
+  <button class="buffer visually-hidden" tabindex="-1" accesskey="8">Freedom</button>
+
+<label for="toggleSwitch" class="toggle__label">
+    Fix issues
+    <button id="toggleSwitch" class="toggle__btn" aria-pressed="false">
+      <span class="toggle__thumb"></span>
+      <svg class="toggle__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+        <path d="m18.148 12.48 5.665-5.66a4 4 0 0 0 0-5.66 3.996 3.996 0 0 0-5.665 0l-5.664 5.66L6.82 1.16a3.994 3.994 0 0 0-5.664 0 4 4 0 0 0 0 5.66l5.664 5.66-5.664 5.67a4 4 0 0 0 0 5.66 3.994 3.994 0 0 0 5.664 0l5.664-5.66 5.664 5.66a3.996 3.996 0 0 0 5.665 0 4 4 0 0 0 0-5.66z"/>
+      </svg>
+      <svg class="toggle__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 -1 10 10">
+        <path d="M3.06 2.94A1.5 1.5 0 0 0 .94 5.06l2 2a1.5 1.5 0 0 0 2.12 0l4-4A1.5 1.5 0 0 0 6.94.94L4 3.878z" clip-rule="evenodd"/>
+      </svg>
+    </button>
+  </label>
+</section>
   
   <script src="/js/site.js"></script>
 </body>

@@ -6,7 +6,7 @@ test: true
 ---
 <div class="intro__container">
  <div class="intro__img-wrapper">
-    <img class="intro__img" alt="" height="280" width="280" src="/img/devices.jpg">
+    <img class="intro__img" height="280" width="280" src="/img/devices.jpg">
   </div>
   <div class="intro__text-wrapper">
     <h2 id="s1">What we do</h2>
@@ -19,7 +19,7 @@ test: true
 <div class="wave__container">
   <div class="wave--1"></div>
   <div class="wave__content">
-    <h2 class="h2" id="s2">How we excel</h2>
+    <p class="h2" id="s2">How we excel</p>
     <p>We use a tried and trusted process to deliver you the best possible product. We're the best fit for you, no matter what your project requires, we will design and build a system that suits your needs perfectly</p>
     <ul class="steps__list">
       <li class="steps__item">
@@ -45,13 +45,13 @@ test: true
 <div class="tech__container">
   <h2>What tech do we use?</h2>
   <p>We only use the latest and greatest technical solutions to build solutions. We don't believe in conventional methods, we're ahead of the curve.</p>
-  <ul class="tech__list">
-    <li>We don't believe in multipage websites, why have individual pages, when you can have a single page application?</li>
-    <li>We make the fastest websites possible, in fact, our average time to interactive (TTI) is 18 seconds, that gives your users just enough time to flick the kettle on, whilst they wait for the site to load</li>
-    <li>We can protect you from accessibility legal issues, as we can develop sites that can trick automated checkers into displaying a perfect accessibility score</li>
-    <li>We have developed our own in-house Artificial Intelligence, that can build flawless websites, hundreds of times faster than conventional engineers, we call it the Systematic Hybrid Intelligence Tool</li>
-    <li>We use React, for single page goodness, we use if for websites, mobile apps and even desktop apps: React all the things</li>
-  </ul>
+  <div class="tech__list">
+    <p>We don't believe in multipage websites, why have individual pages, when you can have a single page application?</p>
+    <p>We make the fastest websites possible, in fact, our average time to interactive (TTI) is 18 seconds, that gives your users just enough time to flick the kettle on, whilst they wait for the site to load</li>
+    <p>We can protect you from accessibility legal issues, as we can develop sites that can trick automated checkers into displaying a perfect accessibility score</li>
+    <p>We have developed our own in-house Artificial Intelligence, that can build flawless websites, hundreds of times faster than conventional engineers, we call it the Systematic Hybrid Intelligence Tool</p>
+    <p>We use React, for single page goodness, we use if for websites, mobile apps and even desktop apps: React all the things</p>
+  </div>
 </div>
 
   

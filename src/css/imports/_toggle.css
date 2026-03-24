@@ -1,0 +1,96 @@
+.toggle__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.toggle__label {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.toggle__btn {
+  display: inline-block;
+  width: 4.25rem;
+  height: 2.25rem;
+  background-color: var(--toggle-off);
+  border: 2px solid #72278e;
+  border-radius: 1rem;
+  margin-left: .5rem;
+  position: relative;
+  vertical-align: middle;
+  transition: background-color 0.3s ease;
+}
+
+.toggle__btn[aria-pressed="true"] {
+  background-color: var(--toggle-on);
+}
+
+.toggle__btn[aria-pressed="true"] .toggle__thumb {
+  content: "\2713";
+  transform: translateX(2rem);
+  background-color: var(--toggle-on);
+}
+
+.toggle__btn:focus-visible {
+  outline: 2px solid var(--colour-text);
+  outline-offset: 2px;
+}
+
+.toggle__thumb {
+  position: absolute;
+  top: .25rem;
+  left: .25rem;
+  display: block;
+  border: 2px solid var(--colour-text);
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--toggle-off);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 2;
+}
+
+.toggle__check,
+.toggle__cross {
+  position: absolute;
+  
+  z-index: 1;
+}
+
+.toggle__check {
+  top: .25rem;
+  left: .25rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.toggle__cross {
+  top: .375rem;
+  height: 1.125rem;
+  width: 1.125rem;
+  right: .4375rem;
+}
+
+.toggle__check path,
+.toggle__cross path  {
+  fill: var(--colour-text);
+}
+
+.buffer {
+  padding: .5rem .75rem;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: var(--toggle-on);
+  color: var(--colour-text);
+  z-index: 10;
+}
+
+.buffer:focus {
+  outline: 3px solid var(--colour-text);
+  outline-offset: 3px;
+}
+

@@ -1,4 +1,5 @@
-[data-form-modal-open] {
+[data-form-modal-open],
+[data-page="about"][data-modal-open] {
   overflow-y: hidden;
 }
 
@@ -7,7 +8,7 @@
 .success__dialog,
 .poor__dialog {
   position: fixed;
-  margin: auto;
+  margin: 0 auto;
   inset: 0.75rem;
   border: 2px solid var(--colour-primary);
   border-radius: 8px;
@@ -23,6 +24,8 @@
   justify-content: flex-end;
 }
 
+.success__agree,
+.success__disagree,
 .modal__close-btn[id="closeBtm"] {
   margin: 1rem;
   border: none;
@@ -113,6 +116,22 @@ html[data-page="about"][data-modal-open] footer {
   transition: transform 1500ms ease;
 }
 
+.success__controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .success__timer.closing {
   transform: scaleX(0);
+}
+
+[data-page="about"][data-modal-open] body {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
+[data-page="about"][data-modal-open] dialog {
+  position: fixed;
+  /* width: 100%; */
 }
