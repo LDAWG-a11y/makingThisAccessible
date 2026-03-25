@@ -593,9 +593,9 @@ window.addEventListener('load', () => {
 
 // breakIt();
 
-// navBtn.addEventListener('click', () => {
-//   navBtn.getAttribute('aria-expanded') === 'false' ? navBtn.setAttribute('aria-expanded', 'true') : navBtn.setAttribute('aria-expanded', 'false');
-// })
+navBtn.addEventListener('click', () => {
+  navBtn.getAttribute('aria-expanded') === 'false' ? navBtn.setAttribute('aria-expanded', 'true') : navBtn.setAttribute('aria-expanded', 'false');
+})
 
 
 
