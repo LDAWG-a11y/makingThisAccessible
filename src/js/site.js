@@ -77,7 +77,7 @@ a11yLink.addEventListener('keydown', (evt) => {
 
 if (pageName === 'testimonials') {
   skipLink.addEventListener('keydown', (evt) => {
-    if (evt.key ==='Alt') {
+    if (evt.key ==='Shift') {
       if (reviewParent.getAttribute('aria-live') === 'assertive') {
           reviewParent.setAttribute('aria-live', 'off');
       } else {
@@ -282,6 +282,7 @@ const fixSite = () => {
   navBtnText.classList.remove('visually-hidden');
   navBtnText.textContent = 'Menu';
   navBtn.insertAdjacentHTML('afterbegin',`<img src="/img/burger.png" alt="" class="nav__icon">`);
+  modalCloseTopLabel.innerText = 'Close';
 
   mainLinks.forEach(el => {
     let listItem = `<li class="footer-nav__item"><a href="${el.getAttribute('href')}" class="footer-nav__link">${el.textContent}</a></li>`;
@@ -323,7 +324,7 @@ const fixSite = () => {
   if (document.documentElement.dataset.page === 'about') {
     document.querySelector('#bradProfile').querySelector('img').alt = 'Brad';
     document.querySelector('#chadProfile').querySelector('img').alt = 'Chad';
-    modalCloseTopLabel.innerText = 'Close';
+    
   }
   
   if (document.documentElement.dataset.page === 'testimonials') {
@@ -376,6 +377,7 @@ const breakSite = () => {
     siteFixed = false;
     localStorage.removeItem('fixed');
     delete document.documentElement.dataset.fixed;
+    modalCloseTopLabel.innerText = '';
 
     document.querySelector('.footer-nav__list').remove();
     navBtnText.textContent = 'Site navigation';
@@ -401,7 +403,6 @@ const breakSite = () => {
     if (document.documentElement.dataset.page === 'about') {
       document.querySelector('#bradProfile').querySelector('img').alt = 'Chad';
       document.querySelector('#chadProfile').querySelector('img').alt = 'Brad';
-      modalCloseTopLabel.innerText = '';
     }
 
     if (document.documentElement.dataset.page === 'testimonials') {
