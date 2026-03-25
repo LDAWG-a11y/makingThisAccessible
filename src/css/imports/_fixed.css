@@ -8,7 +8,7 @@
 }
 
 @media (max-width: 34.99em) {
-  .footer__popup {
+  [data-fixed] .footer__popup {
     display: block;
   }
 
