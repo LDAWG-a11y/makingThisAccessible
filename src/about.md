@@ -16,7 +16,7 @@ test: true
   <div class="profile" id="bradProfile">
     <div class="profile__primary">
       <h3 class="profile__main-heading">Brad</h3>
-      {% image "src/img/chad.png", "Chad" %}
+      {% image "src/img/brad.png", "Chad" %}
       <div class="profile__main-text">
         <h4 class="profile__sub-heading">Role</h4>
         <p>Chief Technology Officer</p>
@@ -48,7 +48,7 @@ test: true
   <div class="profile" id="chadProfile">
     <div class="profile__primary">
       <h3 class="profile__main-heading">Chad</h3>
-      {% image "src/img/brad.png", "Brad" %}
+      {% image "src/img/chad.png", "Brad" %}
       <div class="profile__main-text">
         <h4 class="profile__sub-heading">Role</h4>
         <p>Chief Operating Officer</p>
