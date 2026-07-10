@@ -25,7 +25,7 @@ test: true
     </div>
     <div class="form__inputs-wrapper">
       <label class="form__label">Phone</label>
-      <input class="form__input--text input" type="text" id="phone" required pattern="\+?[\d\-\s]+">
+      <input class="form__input--text input" type="text" id="phone" required pattern="^\+?[0-9]{1,3}[ \-\.]?\(?[0-9]{1,4}\)?[ \-\.]?[0-9]{1,4}[ \-\.]?[0-9]{1,9}$">
     </div>
     <div class="form__inputs-wrapper">
       <label class="form__label">Email</label>
@@ -54,3 +54,4 @@ test: true
     </div>
   </form>
 </div>
+

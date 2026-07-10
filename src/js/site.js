@@ -31,7 +31,10 @@ const cBoxWrapper = document.querySelector('.form__accept-container');
 const cBoxLbl = cBoxWrapper?.querySelector('.form__checkbox-label');
 const formBtn = document.getElementById('formBtn');
 const form = document.getElementById('form');
+const bradImg = document.querySelector('#chadProfile img');
+const chadImg = document.querySelector('#bradProfile img');
 let siteFixed = false;
+
 
 let index = 0;
 let transitionDelay = 1500;
@@ -77,7 +80,7 @@ a11yLink.addEventListener('keydown', (evt) => {
 
 if (pageName === 'testimonials') {
   skipLink.addEventListener('keydown', (evt) => {
-    if (evt.key ==='Shift') {
+    if (evt.shiftKey) {
       if (reviewParent.getAttribute('aria-live') === 'assertive') {
           reviewParent.setAttribute('aria-live', 'off');
       } else {
@@ -278,7 +281,6 @@ const fixSite = () => {
   const mainLinks = document.querySelectorAll('.nav__list a');
   document.querySelector('.footer__useful div').insertAdjacentHTML('afterbegin', `<ul class="footer-nav__list"></ul>`);
   const footerNavList = document.querySelector('.footer-nav__list');
-  helpModalBtn.setAttribute('accesskey', '9');
   navBtnText.classList.remove('visually-hidden');
   navBtnText.textContent = 'Menu';
   navBtn.insertAdjacentHTML('afterbegin',`<img src="/img/burger.png" alt="" class="nav__icon">`);
@@ -322,9 +324,10 @@ const fixSite = () => {
   }
 
   if (document.documentElement.dataset.page === 'about') {
-    document.querySelector('#bradProfile').querySelector('img').alt = 'Brad';
-    document.querySelector('#chadProfile').querySelector('img').alt = 'Chad';
-    
+    document.querySelector('#bradProfile').querySelector('picture').innerHTML = bradImg.outerHTML;
+    bradImg.alt = 'Brad';
+    document.querySelector('#chadProfile').querySelector('picture').innerHTML = chadImg.outerHTML;
+    chadImg.alt = 'Chad';
   }
   
   if (document.documentElement.dataset.page === 'testimonials') {
@@ -401,8 +404,10 @@ const breakSite = () => {
     }
 
     if (document.documentElement.dataset.page === 'about') {
-      document.querySelector('#bradProfile').querySelector('img').alt = 'Chad';
-      document.querySelector('#chadProfile').querySelector('img').alt = 'Brad';
+      document.querySelector('#bradProfile').querySelector('picture').innerHTML = chadImg.outerHTML;
+      bradImg.alt = 'Chad';
+      document.querySelector('#chadProfile').querySelector('picture').innerHTML = bradImg.outerHTML;
+      chadImg.alt = 'Brad';
     }
 
     if (document.documentElement.dataset.page === 'testimonials') {

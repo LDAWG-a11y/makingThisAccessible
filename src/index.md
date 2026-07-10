@@ -12,7 +12,7 @@ test: true
     <h2 id="s1">What we do</h2>
     <p class="intro__text">We push the boundaries of technology to build bespoke websites and software solutions, that stand out from the rest. We're based in Silicon Valley but our reach is global, there is not a corner of the planet that our stunning products have not reached. In fact, we are currently working with a client based in North Sentinel Island, that's how big our brand is. we're technology evangelists and some (Okay, many) will say we are tech unicorns, we can do it all.</p>
     <p class="intro__text">We take you from idea to product, guiding you through each step of the process, using our innovative skillset and hollistic understanding of digital technologies. We started out building websites from a garage, back in 1990, we have always been ahead of the game and continue to challenge the boundaries in the tech space.</p>
-    <p class="intro__text">We're Brad and Chad, two highschool friends, that became brothers in Brad's mom's Bay Area garage, just us, Brad's trusty Dell desktop and the drive to be thought-leaders, innovators and trend-setters in the digital space. Read about our story on our <a class="intro__link" href="/about/">About us page</a>, where you will learn about us, our mantra and how we can build the best possible digital solutions, for your needs.</p>
+    <p class="intro__text">We're Brad and Chad, two high school friends, that became brothers in Brad's mom's Bay Area garage, just us, Brad's trusty Dell desktop and the drive to be thought-leaders, innovators and trend-setters in the digital space. Read about our story on our <a class="intro__link" href="/about/">About us page</a>, where you will learn about us, our mantra and how we can build the best possible digital solutions, for your needs.</p>
   </div>
 </div>
 
@@ -23,12 +23,12 @@ test: true
     <p>We use a tried and trusted process to deliver you the best possible product. We're the best fit for you, no matter what your project requires, we will design and build a system that suits your needs perfectly</p>
     <ul class="steps__list">
       <li class="steps__item">
-        <span class="steps__top">You contact us with your amazing idea.</span>
+        <span class="steps__top">You contact us with your amazing idea. </span>
         {% image "./src/img/idea.png", "" %}
-        <span class="steps__bottom">We tell you exactly what is best for you.</span>
+        <span class="steps__bottom">We tell you exactly what is best for you. </span>
       </li>
       <li class="steps__item">
-        <span class="steps__top">We create a stunning design and demo it to you.</span>
+        <span class="steps__top">We create a stunning design and demo it to you. </span>
        {% image "./src/img/design.png", "" %}
         <span class="steps__bottom">If there's anything you don't like, we'll tell you why you are wrong.</span>
       </li>

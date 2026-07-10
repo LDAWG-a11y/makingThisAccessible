@@ -5,7 +5,7 @@ pageName: services
 test: true
 ---
 <div class="main__container">
-<p>We offer a complete suite of tech services, we can develop for any device or platform using tried and trusted methodolgies. We invest heavily in the tools we use to create bespoke products. We use the best framework on the market, React, if your product cannot be created with React, it's probably not worth creating, but we'll still build it, as we're all about the cash.</p>
+<p>We offer a complete suite of tech services, we can develop for any device or platform using tried and trusted methodologies. We invest heavily in the tools we use to create bespoke products. We use the best framework on the market, React, if your product cannot be created with React, it's probably not worth creating, but we'll still build it, as we're all about the cash.</p>
 <p>We offer a selection of packages for all of our products, Bronze, Silver and Gold, we strongly advise the Gold package, as it includes
 a number of automated tools, leveraging the power of our bespoke advancements in Artificial Intelligence. A suite of intelligent tools to ensure you have a product that protects you from any legal challenges or page-ranking penalties.</p>
 
