@@ -104,10 +104,6 @@ footer a:not([class]):focus-visible {
   .footer__secondary {
     /* flex: 35%; */
   }
-
-  .footer__primary p {
-    font-size: clamp(1.25rem, 1.25rem, 1.75vw);
-  }
 }
 
 

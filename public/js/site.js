@@ -165,7 +165,6 @@ formBtn?.addEventListener('click', (evt) => {
   if (cBoxInput.getAttribute('aria-checked' || !cBoxInput.checked) === 'false') {
     cBoxInput.dataset.err = '';
     if (siteFixed && !document.getElementById('cBoxError')) {
-      console.log( cBoxInput );
       cBoxInput.closest('.form__inputs-wrapper').insertAdjacentHTML('afterbegin', `<p id="cBoxError" class="err-msg">You must agree to all of the things</p>`);
     }
   } else {
@@ -191,6 +190,7 @@ const validateForm = () => {
 
 const checkInputsValidity = () => {
   inputs.forEach(input => {
+    
     if (!input.validity.valid) {
       input.dataset.err = '';
 
@@ -217,11 +217,12 @@ const checkInputsValidity = () => {
       } else {
         input.removeAttribute('aria-invalid');
         input.removeAttribute('aria-describedby');
-        delete input.dataset.err
         if (document.getElementById(`${input.id}-error`)) {
           document.getElementById(`${input.id}-error`).remove();
         }
       }
+    } else {
+      delete input.dataset.err;
     }
   })
 }
