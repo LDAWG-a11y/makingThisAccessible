@@ -53,8 +53,8 @@ body:has(.obscure-modal[open]) {
   border: 2px solid var(--colour-text);
   border-radius: 50%;
   padding: .5rem;
-  height: 1.75rem;
-  width: 1.75rem;
+  min-height: 1.75rem;
+  min-width: 1.75rem;
   background-clip: content-box;
   background-color: var(--colour-bg);
   transition: background-color 0.4s ease, padding .4s ease;
