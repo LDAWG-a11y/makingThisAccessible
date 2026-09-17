@@ -102,6 +102,11 @@
   text-decoration: underline;
 }
 
+[data-fixed] .intro__link:focus-visible {
+  outline: 2px solid var(--colour-bright-replace);
+  outline-offset: 2px;
+}
+
 [data-fixed] .offer__text {
   font-size: 2rem;
   font-weight: bold;
