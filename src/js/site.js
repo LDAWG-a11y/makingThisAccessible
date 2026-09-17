@@ -286,6 +286,7 @@ const fixSite = () => {
   navBtnText.textContent = 'Menu';
   navBtn.insertAdjacentHTML('afterbegin',`<img src="/img/burger.png" alt="" class="nav__icon">`);
   modalCloseTopLabel.innerText = 'Close';
+  
 
   mainLinks.forEach(el => {
     let listItem = `<li class="footer-nav__item"><a href="${el.getAttribute('href')}" class="footer-nav__link">${el.textContent}</a></li>`;
@@ -469,8 +470,11 @@ const modalClose = (isAbout) => {
   delete document.documentElement.dataset.modalOpen;
   helpModalInner.classList.remove('modal--show');
   modal.close();
+  helpModalBtn.scrollIntoView({ behavior: 'smooth', block: 'end' });
   if (isAbout) {
     document.querySelector('.nav a').focus();
+  } else {
+    helpModalBtn.focus({ focusVisible: true });
   }
 }
 
