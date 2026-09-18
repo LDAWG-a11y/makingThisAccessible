@@ -286,6 +286,7 @@ const fixSite = () => {
   navBtnText.textContent = 'Menu';
   navBtn.insertAdjacentHTML('afterbegin',`<img src="/img/burger.png" alt="" class="nav__icon">`);
   modalCloseTopLabel.innerText = 'Close';
+  helpModalBtn.setAttribute('accesskey', '6');
   
 
   mainLinks.forEach(el => {
@@ -383,6 +384,7 @@ const breakSite = () => {
     localStorage.removeItem('fixed');
     delete document.documentElement.dataset.fixed;
     modalCloseTopLabel.innerText = '';
+    helpModalBtn.removeAttribute('accesskey');
 
     document.querySelector('.footer-nav__list').remove();
     navBtnText.textContent = 'Site navigation';
@@ -507,142 +509,9 @@ window.addEventListener('load', () => {
   }
 });
 
-
-
-
-
-
-
-
-//      
-
-//       formBtn.addEventListener('click', () => {
-//         badValidation();
-//       });
-//     }
-
-
-
-
-
-
-
-
-
-
-// let index = 0;
-// let transitionDelay = 2000;
-// const reviewParent = document.querySelector('.review__wrapper');
-// const reviews = document.querySelectorAll('.review__item');
-// showReview(index)
-// let reviewPos = 1;
-
-// const breakIt = () => {
-//   if (test) {
-//     window.addEventListener('keydown', (evt) => {
-//       if (evt.key === 'h') {
-//         helpModalBtn.click();
-//       }
-//     })
-
-//     navBtn.querySelector('#triggerLabel').textContent = 'Site navigation';
-//     if (pageName === 'home') {
-//       document.querySelector('.intro__img').removeAttribute('alt');
-//       const s2 = document.querySelector('#s2');
-//       const s2R = document.createElement('p');
-//       s2R.classList.add('h2');
-//       s2R.textContent = s2.textContent;
-//       s2.replaceWith(s2R);
-
-//       const techList = document.querySelector('.tech__list');
-//       let items = '';
-//       techList.querySelectorAll('li').forEach(el => {
-//         let text = el.innerText;
-//         items += `<p>${text}</p>`
-//       });
-//       techList.insertAdjacentHTML('beforebegin', `<div class="tech__list">${items}</div>`);
-//       techList.remove();
-//     }
-
-//     if (pageName === 'services') {
-//       document.documentElement.setAttribute('lang', 'es');
-//       helpModalBtn.innerText = 'Just holla us!';
-//     }
-
-//     if (pageName === 'about') {
-//       modal.replaceWith(helpModalInner);
-//       helpModalInner.setAttribute('role', 'dialog');
-//       helpModalInner.setAttribute('aria-labelledby', 'mHead');
-//       document.getElementById('bradProfile').querySelector('img').alt = 'Chad';
-//       document.getElementById('chadProfile').querySelector('img').alt = 'Brad';
-//     }
-
-//     if (pageName === 'contact') {
-//       document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1.0 maximum-scale=1.9');
-//       skipLink.setAttribute('href', 'd1');
-//       document.getElementById('form').querySelectorAll('input').forEach(input => {
-//         input.removeAttribute('autocomplete');
-//       })
-
-
-
-
-
-//     if (pageName === 'testimonials') {
-//       document.querySelector('a[href="/accessibility/"]').addEventListener('keydown', (evt) => {
-//         if (evt.key === 'Tab' || (evt.shiftKey && evt.key === 'Tab')) {
-//           evt.preventDefault(); 
-//         }
-//       })
-
-//       window.addEventListener('load', (evt) => {
-//         document.body.setAttribute('data-loaded', '');
-//       })
-//     }
-//   }
-// }
-
-// breakIt();
-
 navBtn.addEventListener('click', () => {
   navBtn.getAttribute('aria-expanded') === 'false' ? navBtn.setAttribute('aria-expanded', 'true') : navBtn.setAttribute('aria-expanded', 'false');
 })
-
-
-
-//   if (idx === 1 && pageName === 'about' && test) {
-//     helpModalCloseBtns[1].addEventListener('mousedown', () => {
-//       abtCls();
-//     })
-    
-//     helpModalCloseBtns[1].addEventListener('keydown', () => {
-//       abtCls();
-//     })
-//   }
-// })
-
-// const abtCls = () => {
-//   helpModalInner.classList.remove('modal--show');
-//   document.body.focus();
-//   document.documentElement.removeAttribute('data-modal-open');
-// }
-
-
-
-// const badValidation = () => {
-//   inputs.forEach(input => {
-//     if (!input.value.length) {
-//       input.setAttribute('data-err', 'true');
-//     } else {
-//       input.removeAttribute('data-err');
-//     }
-//   })
-
-  // if (cBox.getAttribute('aria-checked') == 'false') {
-  //   cBox.setAttribute('data-err', 'true');
-  // } else {
-  //   cBox.removeAttribute('data-err');
-  // }
 
   
 

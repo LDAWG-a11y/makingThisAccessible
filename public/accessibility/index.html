@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-page="accessibility">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility | Problematica11y</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <meta name='robots' content='noindex' />
+</head>
+<body>
+ <header class="header">
+  <a class="skip-link visually-hidden" id="skip" href="#h1">Skip to content</a>
+  <nav class="nav">
+    <button class="nav__btn" id="navBtn" aria-expanded="false" aria-controls="menuList"><span class="visually-hidden" id="triggerLabel">Site navigation</span></button>
+    <ul class="nav__list" id="menuList">
+      
+        
+          <li class="nav__listitem">
+            <a 
+            class="nav__link"
+            id="d1"
+            href="/" >Home</a>
+          </li>
+        
+      
+        
+          <li class="nav__listitem">
+            <a 
+            class="nav__link"
+            id="d2"
+            href="/services/" >Services</a>
+          </li>
+        
+      
+        
+          <li class="nav__listitem">
+            <a 
+            class="nav__link"
+            id="d3"
+            href="/about/" >About</a>
+          </li>
+        
+      
+        
+          <li class="nav__listitem">
+            <a 
+            class="nav__link"
+            id="d4"
+            href="/contact/" >Contact</a>
+          </li>
+        
+      
+        
+          <li class="nav__listitem">
+            <a 
+            class="nav__link"
+            id="d5"
+            href="/testimonials/" >Testimonials</a>
+          </li>
+        
+      
+        
+      
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    
+    <h1 class="main__heading" id="h1">Accessibility</h1>
+    
+    <h2>Accessibility Statement</h2>
+<p>We're accessible, because we say so</p>
+
+  </main>
+  
+<footer class="footer">
+  <div class="footer__primary">
+    <h2>Disclaimer</h2>
+    <p>This site is designed and built to be intentionally problematic. It contains numerous accessibility issues that map to WCAG success criteria. It is merely an educational tool, which comes with a supporting guide LINK.
+
+    </p>
+    <p>The copy in this site is just for fun. We use common stereotypical language and views, which some individuals in the tech scene may have. The views in the copy of this site in no way reflect the views of the Make Things Accessible team.</p>
+    <p>Any similarities in the site's design and theming are purely coincidental and do not aim to poke fun at any specific site or app.</p>
+    <p>All images are generated with Adobe Firefly AI.</p>
+  </div>
+  <div class="footer__secondary">
+    <div class="footer__useful">
+      <h2>Useful Stuff</h2>
+      <div></div>
+    </div>    
+    <div class="footer__popup">
+      <p>Click the <span>blue button</span>, for Assistance.</p>
+      <p>We have the answer for all of your useful questions</p>
+      <button class="footer__modal-btn" id="modalTrigger">Help</button>
+    </div>
+    <a class="footer__link" href="/accessibility/">Accessibility</a>
+  </div>
+  <div class="footer__socials">
+    <a href="https://www.facebook.com/"><img src="/img/facey.png" class="footer__socials--facebook" alt="."></a>
+    <a href="https://x.com/home"><img src="/img/x.png" alt="x / Twitter" class="footer__socials--twitter"></a>
+    <a href="https://www.tiktok.com/"><img src="/img/tikTok.png" alt="Tik Tok" class="footer__socials--tiktok"></a>
+  </div>
+</footer>
+<dialog class="modal" id="modal">
+  <div class="modal__inner">
+    <button class="modal__close-btn" id="closeTop">
+      <span class="visually-hidden"></span>
+      <span class="modal__close--top"></span>
+    </button>
+    <h1 id="mHead">Ask our chatbot anything</h1>
+    <p>You can find all of the help you need in this pop up, simply expand the relevant section for your query. If there isn't 
+      a section that matches your particular query, don't worry about it, your question is simply not worth asking and we have got you covered. trust us, we are the best.
+    </p>
+    <h2 class="accordion__heading" id="accH1" data-expanded="false">
+      <button class="accordion__btn" aria-expanded="false" aria-controls="accP1">Can you make accessible websites?<span class="accordion__icon"></span></button>
+    </h2>
+    <div class="accordion__panel" id="accP1"><p>Yes. In fact we have been building websites that comply with WCAG 1.0 since way back in 1998. We get it, you likely have disabled users 
+      that have issues with your current site and are worried about legal issues? Don't worry, we have your back, we provide solutions that will
+      keep those pesky lawyers at bay, check out our <a href="/services/">Services page</a> for the choice of packages, hint, you should spend the extra on the Gold package as it includes our overlay.</p>
+    </div>
+    <h2 class="accordion__heading" id="accH2" data-expanded="false">
+      <button class="accordion__btn" aria-expanded="false" aria-controls="accP2">Will my website be secure?<span class="accordion__icon"></span></button>
+    </h2>
+    <div class="accordion__panel" id="accP2"><p>Yup. We only use the safest web protocols and encryption methods to keep your site and data safe. All our sites use the HTTP protocol 
+      and the MD5 hashing algorithm.
+    </p></div>
+    <h2 class="accordion__heading" id="accH3" data-expanded="false">
+      <button class="accordion__btn" aria-expanded="false" aria-controls="accP3">Can I use my own designer?<span class="accordion__icon"></span></button>
+    </h2>
+    <div class="accordion__panel" id="accP3">
+      <p>No. Simply put, we are better and you'd be making a huge mistake. We are better than the rest 
+        and we know our business and technology better than you and some rando designer. As an example, if your business sells luxury handmade chocolates, we consider you the 
+        expert, so we would not tell you to change the recipe. Using that same logic we don't want some hipster designer telling us 
+        stuff that doesn't make sense to us. You trust our systems and judgements and we won't tell you how to improve your chocolate (unless we don't like it).</p>
+    </div>
+    <h2 class="accordion__heading" id="accH4" data-expanded="false">
+      <button class="accordion__btn" aria-expanded="false" aria-controls="accP4">Are your systems good value for money?<span class="accordion__icon"></span></button>
+    </h2>
+    <div class="accordion__panel" id="accP4">
+      <p>Hell yeah. We don't feel the need to compete with regular engineers, as our stuff is better. You pay a premium price 
+      and get a premium product. Don't settle for less.
+      </p>
+    </div>
+    <h2 class="accordion__heading" id="accH5" data-expanded="false">
+      <button class="accordion__btn" aria-expanded="false" aria-controls="accP5">Will my users find the sites to be intuitive?<span class="accordion__icon"></span></button>
+    </h2>
+    <div class="accordion__panel" id="accP5">
+      <p>Most of them will. Some folks just use stuff wrong, you don't need to worry about those people, 
+        because if they can't figure out how to use your site, that's usually a good sign they will cause you problems later down the line. Y'know the kind of customer:
+        "I need to return these shoes as I actually meant to order a microwave". That's far too much hassle, your genuine customers will be fine and you should weed out users that are going to cause you issues.
+      </p>
+    </div>
+    <h2 class="accordion__heading" id="accH6" data-expanded="false">
+      <button class="accordion__btn" aria-expanded="false" aria-controls="accP6">I have an issue with a site you built<span class="accordion__icon"></span></button>
+    </h2>
+    <div class="accordion__panel" id="accP6"><p>No you don't. You're using it wrong or you broke it (please check the small print in the T&Cs). When it transpires it was your fault, 
+      we can of course fix it for a fee, just send us an email to <a href="mailto:thisIsNotAValidEmailaddress@bradAndChad.com">Support @ Brad and Chad</a></p>
+    </div>
+    <div class="modal__footer">
+      <button class="modal__close-btn" id="closeBtm">
+        close
+      </button>
+    </div>
+  </div>
+</dialog>
+<dialog class="success__dialog">
+  <h1>We gotchu, hold tight, we'll be in touch!</h1>
+  <p>I confirm by sending this message I will be billed a compulsory consultation fee of $2000, for receiving a follow up call</p>
+  <p>It is my responsibility to answer the call, any missed calls will be billed at $1000 per time</p>
+  <input id="cBoxSuccess" type="checkbox" checked>
+  <label for="cBoxSuccess">I agree to be billed at the supplied rate</label>
+  <span class="success__timer"></span>
+</dialog>
+<dialog class="poor__dialog">
+  <h1>OOPS</h1>
+  <p>Sorry, you are not wealthy enough to use our service, Come back when you're not so broke</p>
+  <span class="success__timer"></span>
+</dialog>
+<section class="toggle__wrapper" aria-labelledby="toggleHeading">
+  <h2 id="toggleHeading" style="display:none">Fix site controls</h2>
+  
+<button class="buffer visually-hidden" tabindex="-1" accesskey="9">Freedom</button>
+<label for="toggleSwitch" class="toggle__label">
+  Fix issues
+  <button id="toggleSwitch" class="toggle__btn" aria-pressed="false">
+    <span class="toggle__thumb"></span>
+    <svg class="toggle__cross" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true" viewBox="0 0 25 25">
+      <path d="m18.148 12.48 5.665-5.66a4 4 0 0 0 0-5.66 3.996 3.996 0 0 0-5.665 0l-5.664 5.66L6.82 1.16a3.994 3.994 0 0 0-5.664 0 4 4 0 0 0 0 5.66l5.664 5.66-5.664 5.67a4 4 0 0 0 0 5.66 3.994 3.994 0 0 0 5.664 0l5.664-5.66 5.664 5.66a3.996 3.996 0 0 0 5.665 0 4 4 0 0 0 0-5.66z"/>
+    </svg>
+    <svg class="toggle__check" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" viewBox="0 -1 10 10">
+      <path d="M3.06 2.94A1.5 1.5 0 0 0 .94 5.06l2 2a1.5 1.5 0 0 0 2.12 0l4-4A1.5 1.5 0 0 0 6.94.94L4 3.878z" clip-rule="evenodd"/>
+    </svg>
+  </button>
+</label>
+</section>
+  
+  <script src="/js/site.js"></script>
+</body>
+</html>
