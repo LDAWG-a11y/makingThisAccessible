@@ -2,7 +2,6 @@
 layout: base.njk
 title: Accessibility
 pageName: accessibility
-test: true
 ---
 
 ## Accessibility Statement
